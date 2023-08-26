@@ -1,3 +1,6 @@
+# Задание №9
+# Выведите в консоль таблицу умножения от 2х2 до 9х10 как на школьной тетрадке
+
 multiplier_start_num = 2
 multiplier_end_num = 10
 table_start_num = 2
