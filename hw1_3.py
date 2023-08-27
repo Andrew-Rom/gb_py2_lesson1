@@ -9,10 +9,13 @@ num = input('Введите натуральное число, меньше 100 
 if num.isdigit() and 0 < int(num) <= 100_000:
     num = int(num)
     check = True
-    for i in range(2, num):
-        if num % i == 0:
-            check = False
-            break
+    if num > 2 and not num % 2:
+        check = False
+    else:
+        for i in range(3, num, 2):
+            if num % i == 0:
+                check = False
+                break
     print(f'{num} - целое') if check else print(f'{num} - составное')
 else:
     print('Ошибка ввода')
